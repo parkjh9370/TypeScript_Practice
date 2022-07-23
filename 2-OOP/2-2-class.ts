@@ -5,7 +5,7 @@
   };
 
   class CoffeeMaker {
-    // class Level
+    // class Level (CoffeeMaker.BEANS_GRAMM_PER_SHOT)
     static BEANS_GRAMM_PER_SHOT: number = 7;
     // instance(object) Level (this로 접근)
     coffeeBeans: number = 0;
