@@ -1,1 +1,1 @@
-# TypeScript_Practice
+# TypeScript + OOP Practice
