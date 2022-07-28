@@ -1,0 +1,5 @@
+{
+  interface Employee {
+    pay(): void;
+  }
+}
