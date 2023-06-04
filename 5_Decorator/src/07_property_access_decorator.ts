@@ -43,7 +43,6 @@
 			return this._price;
 		}
 
-		// @setLogger
 		set price(price: number) {
 			if (price > 0) {
 				this._price = price;

@@ -12,7 +12,7 @@
 		console.log('method decorator');
 		console.log(target); // class constructor
 		console.log(name); // 인자
-		console.log(descriptor.value); // 함수
+		console.log(descriptor); // 함수
 	}
 
 	class Product {
