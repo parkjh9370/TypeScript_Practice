@@ -31,7 +31,7 @@ interface PropertyDescriptor {
 
 ---
 
-사용 예시 (메서드 변경)
+#### 📌 예시 (메서드 변경)
 
 ```js
 function methodDecorator() {
