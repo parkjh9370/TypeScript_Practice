@@ -2,7 +2,13 @@
  * Decorator + class 실행 순서
  *  - 데코레이터 내부는 순서대로 실행
  *  - 내부 함수는 그 역순으로 실행
+ *  -
  * => 즉, bottom up 방식으로 실행됨
+ *
+ * class decorator의 경우
+ * 전달받은 constructor 타입(Function)을 반환해야 함
+ *
+ * 그런데 만약 constructor 값을 활용하거나 변화를 주는 경우는 그에 맞는 타입 반환해야 함
  *
  * 앵귤러의 경우 데코레이터 방식을 통해 객체를 전달하는 방식을 적극 활용한다
  * (https://angular.io/api/core/Component)
@@ -20,7 +26,7 @@
 
 	function WithTemplate(template: string, hookId: string) {
 		console.log('TEMPLATE FACTORY');
-		return function (constructor: any) {
+		return function (constructor: any): void {
 			console.log('TEMPLATE FACTORY FUNCTION');
 			const hookEl = document.getElementById(hookId);
 			const person = new constructor();
